@@ -19,6 +19,7 @@ export default async () => {
   return arenas.map(arena => ({
     external: [
       'arena',
+      'arena/constants',
       'arena/prototypes',
       'game',
       'game/constants',
