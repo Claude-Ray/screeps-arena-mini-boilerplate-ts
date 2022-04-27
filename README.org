@@ -1,0 +1,63 @@
+* Screeps Arena TypeScript Mini Boilerplate
+
+** Usage
+
+*** Installation
+
+For the first time.
+#+begin_src bash
+npm i
+#+end_src
+
+For a clean update.
+#+begin_src bash
+npm run reinstall
+#+end_src
+
+*** Build
+
+#+begin_src bash
+npm run build
+#+end_src
+
+*** Input & Output
+
+All the source code files are located in =src/arenas/=.
+
+#+begin_quote
+src
+├── arenas
+│   ├── alpha-capture_the_flag
+│   │   └── main.ts
+│   ├── alpha-collect_and_control
+│   │   └── main.ts
+│   └── alpha-spawn_and_swamp
+│       └── main.ts
+└── common
+    └── index.ts
+#+end_quote
+
+The target code will be output to the =dist/= directory after build.
+
+#+begin_quote
+dist
+├── alpha-capture_the_flag
+│   └── main.mjs
+├── alpha-collect_and_control
+│   └── main.mjs
+└── alpha-spawn_and_swamp
+    └── main.mjs
+#+end_quote
+
+** Recipes
+
+- auto-completion: [[https://github.com/screepers/typed-screeps-arena][typed-screeps-arena]] is still WIP.
+  Sometimes it's buggy, then you need to lock the version to =#commit= instead of the branch =#develop=.
+
+- bundler: rollup.
+
+- linter: Use tslint instead of eslint since [[https://github.com/ananthakumaran/tide][tide]] is not fully support eslint.
+
+** See also
+
+- [[https://github.com/screepers/screeps-arena-typescript-starter][screeps-arena-typescript-starter]]: Maintained by the screepers community.
