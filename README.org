@@ -24,7 +24,7 @@ npm run build
 
 All the source code files are located in =src/arenas/=.
 
-#+begin_quote
+#+begin_src
 src
 ├── arenas
 │   ├── alpha-capture_the_flag
@@ -35,11 +35,11 @@ src
 │       └── main.ts
 └── common
     └── index.ts
-#+end_quote
+#+end_src
 
-The target code will be output to the =dist/= directory after build.
+The target code will be output to the =dist/= directory after running build.
 
-#+begin_quote
+#+begin_src
 dist
 ├── alpha-capture_the_flag
 │   └── main.mjs
@@ -47,7 +47,7 @@ dist
 │   └── main.mjs
 └── alpha-spawn_and_swamp
     └── main.mjs
-#+end_quote
+#+end_src
 
 ** Recipes
 
